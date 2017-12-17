@@ -53,7 +53,6 @@ class Header extends Component {
   }
   render () {
     const { userInfo, show, token } =this.state
-    console.log(userInfo)
    return (
      <div className="header">
        <div className="header-a">

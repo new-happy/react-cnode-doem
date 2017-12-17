@@ -5,7 +5,8 @@ import './showtop.css'
 
 class ShowTop extends Component {
   state = {
-    data : null
+    data : null,
+    content:''
   }
   componentDidMount() {
   const { id } = this.props.match.params
@@ -15,6 +16,28 @@ class ShowTop extends Component {
     })
   })
   }
+  handalChange = (e) => {
+    this.setState({
+      content:e.target.value
+    })
+  }
+  handleClick = () => {
+    const { id } = this.props.match.params
+    const data = {
+      accesstoken:sessionStorage.token,
+      content:this.state.content
+    }
+    axios.post(`https://cnodejs.org/api/v1/topic/${id}/replies`,data).then(res => {
+      console.log(res)
+      this.setState({
+        content:''
+      })
+    })
+    .catch(err => {
+      alert(err)
+    })
+  }
+
   render () {
     const { data } = this.state
     const article = data ? (
@@ -44,6 +67,11 @@ class ShowTop extends Component {
    return (
      <div className="show-top">
       { article }
+      <div className="panel">
+        <h2>添加回复</h2>
+        <textarea value={this.state.content} onChange={this.handalChange}></textarea>
+        <button onClick={this.handleClick}>回复</button>
+      </div>
      </div>
    )
   }

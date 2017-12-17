@@ -70,3 +70,30 @@ padding: 6px 13px;
 .replies>div p a{
   color: #08c;
 }
+.panel{
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+.panel h2{
+  font-size: 20px;
+  padding: 10px;
+}
+.panel textarea{
+  width: 95%;
+  margin-left: 10px;
+  height: 200px;
+  border: none;
+  outline: none;
+}
+.panel button{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 54px;
+  line-height: 30px;
+  background-color: #08c;
+  border: 1px solid #08c;
+  border-radius: 5px;
+  color: #fff;
+}
