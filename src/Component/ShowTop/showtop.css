@@ -1,0 +1,72 @@
+.show-top{
+  width: 60%;
+  margin-left: 30px;
+}
+.content{
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.content h2{
+  text-indent: 60px;
+  line-height: 80px;
+}
+.content .content-a{
+  margin-left: 40px;
+  padding:0 0 20px 0;
+}
+.content div{
+  margin-left: 20px;
+}
+.content div span{
+  color: #ccc;
+  margin-right: 10px;
+}
+.replies{
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.replies>div img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.replies .markdown-text p{
+  padding-left: 50px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.markdown-text li{
+  list-style: none;
+}
+.markdown-text p{
+  width: 95%;
+}
+.markdown-text th{
+  border: 1px solid #ccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+.markdown-text td{
+border: 1px solid #ccc;
+text-align: left;
+margin: 0;
+padding: 6px 13px;
+}
+.markdown-text img{
+  width: 95%;
+}
+.replies>div {
+  padding: 10px 10px;
+  border-top: 1px solid #f0f0f0;
+}
+.replies>div a{
+  text-decoration: none;
+  color:#777;
+}
+.replies>div p a{
+  color: #08c;
+}

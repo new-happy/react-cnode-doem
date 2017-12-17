@@ -1,0 +1,41 @@
+.details {
+  width: 60%;
+  margin-left: 30px;
+}
+.details>div{
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.details>div img{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.details>div h2{
+  line-height: 30px;
+  background-color: #f6f6f6;
+  font-size: 16px;
+}
+.information span{
+  color: #778087;
+}
+.information p{
+  line-height: 30px;
+}
+.details div div{
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #f0f0f0
+}
+.details div div a{
+  line-height: 40px;
+  text-decoration: none;
+  color: #08c;
+  font-weight: 600;
+}
+.details div div a:hover{
+  color: #005580;
+  text-decoration: underline;
+}

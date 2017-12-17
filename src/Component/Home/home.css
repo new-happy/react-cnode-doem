@@ -1,0 +1,19 @@
+.home {
+  width: 60%;
+  background-color: #fff;
+  margin-left: 30px;
+}
+.title{
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.title span{
+  margin: 0 15px;
+  color: #80bd01;
+}
+.title span.active{
+  background-color: #80bd01;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 4px;
+}

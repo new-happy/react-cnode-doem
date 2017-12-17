@@ -1,0 +1,30 @@
+.footer{
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.footer>div{
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+.footer>div a{
+  text-decoration: none;
+  color: #666;
+}
+.footer p{
+  line-height: 40px;
+  color: #ababab;
+}
+.footer p img{
+  width: 120px;
+  margin-bottom: -15px;
+}
+.footer p img:nth-child(1){
+  margin-bottom: 0;
+}
+.footer p a{
+  text-decoration: none;
+  color: #08c;
+}
