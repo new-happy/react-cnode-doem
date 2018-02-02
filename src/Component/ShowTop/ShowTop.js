@@ -22,25 +22,27 @@ class ShowTop extends Component {
     })
   }
   handleClick = () => {
-    const { id } = this.props.match.params
-    const data = {
-      accesstoken:sessionStorage.token,
-      content:this.state.content
-    }
-    axios.post(`https://cnodejs.org/api/v1/topic/${id}/replies`,data).then(res => {
-      console.log(res)
-      this.setState({
-        content:''
-      })
-      axios.get(`https://cnodejs.org/api/v1/topic/${id}`).then(res =>{
+    if (sessionStorage.token === '286395c5-04bd-432b-b2ac-2747b533b2b1'){
+      const { id } = this.props.match.params
+      const data = {
+        accesstoken: sessionStorage.token,
+        content: this.state.content
+      }
+      axios.post(`https://cnodejs.org/api/v1/topic/${id}/replies`, data).then(res => {
+        console.log(res)
         this.setState({
-          data : res.data.data
+          content: ''
+        })
+        axios.get(`https://cnodejs.org/api/v1/topic/${id}`).then(res => {
+          this.setState({
+            data: res.data.data
+          })
         })
       })
-    })
-    .catch(err => {
-      alert(err)
-    })
+        .catch(err => {
+          alert(err)
+        })
+    }
   }
 
   render () {
