@@ -1,55 +1,85 @@
-.header{
-  width: 100%;
-  background-color: #444;
+.header {
+    width: 100%;
+    background-color: #444;
 }
-.header-a{
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 30px;
-  height: 60px;
+
+.header-a {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 60px;
 }
+
 .header-a>div {
-  margin-top: 10px;
+    margin-top: 10px;
+    width: 75%;
+    display:flex;
 }
-.login input{
-  width: 200px;
-  border-radius: 50px;
-  border: 1px solid #ccc;
-  text-indent: 10px;
-  outline: none;
-  line-height: 25px;
+
+.login input {
+    width: 200px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    outline: none;
+    line-height: 25px;
+    height: 25px;
+    margin-top: 7px;
 }
-.login-out a:nth-child(1){
-  line-height: 30px;
-  height: 30px;
-  padding: 0 5px;
-  text-decoration: none;
-  margin-top: 5px;
-  margin-right: 40px;
-  background-color:#80bd01;
-  border-radius: 5px;
-  color: #fff;
+
+.login-out>a:nth-child(1) {
+    line-height: 30px;
+    height: 30px;
+    padding: 0 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 40px;
+    background-color: #80bd01;
+    border-radius: 5px;
+    color: #fff;
 }
+
 .login-out {
+    display: flex;
+    height: 40px;
+}
+
+.header-a .login-out img {
+    width: 40px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.header>div button {
+    background-color: #444;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-left: 10px;
+    line-height: 25px;
+    color: #fff;
+    outline: none;
+    height: 40px;
+}
+
+.header-a img {
+    width: 120px;
+    padding-top: 15px;
+}
+
+.link-to{
   display: flex;
-  height: 40px;
+
 }
-.header-a .login-out img{
-  width: 40px;
-  border-radius: 5px;
-  padding: 0;
-}
-.header>div button{
-  background-color: #444;
-  border: 1px solid #444;
-  border-radius: 5px;
-  margin-left: 10px;
-  line-height: 25px;
-  color: #fff;
-  outline: none;
-}
-.header-a img{
-  width: 120px;
-  padding-top: 15px;
+ .link-to>a {
+    background-color: #444;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-left: 10px;
+    line-height: 40px;
+    color: #fff;
+    outline: none;
+    height: 40px;
+    font-size: 12px;
+    text-decoration: none;
 }

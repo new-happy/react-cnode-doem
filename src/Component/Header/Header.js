@@ -60,10 +60,26 @@ class Header extends Component {
            {
              show ? (<div className="login-out">
               <Link to='/topic/create'>发布文章</Link>
-               <Link to={`/user/${userInfo.loginname}`}><img src={ userInfo.avatar_url} alt="11"/></Link>
-               <button onClick={ this.handleLogout}>退出</button>
+              <Link to={`/user/${userInfo.loginname}`}><img src={ userInfo.avatar_url} alt="11"/></Link>
+              <div className="link-to">
+                <Link to='/'>首页</Link>
+                <Link to='/'>未读消息</Link>
+                <Link to='/'>新手入门</Link>
+                <Link to='/'>API</Link>
+                <Link to='/'>关于</Link>
+                <Link to='/'>设置</Link>
+              </div>
+              <button onClick={ this.handleLogout}>退出</button>
              </div>) :( <div className="login">
                <input type="text" value={ token} onChange={ this.handleChange}/>
+               <div className="link-to">
+                 <Link to='/'>首页</Link>
+                 <Link to='/'>未读消息</Link>
+                 <Link to='/'>新手入门</Link>
+                 <Link to='/'>API</Link>
+                 <Link to='/'>关于</Link>
+                 <Link to='/'>设置</Link>
+               </div>
                 <button onClick={this.handleClick}>登录</button>
              </div>)
            }

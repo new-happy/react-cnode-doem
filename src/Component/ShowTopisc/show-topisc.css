@@ -6,6 +6,7 @@
 .show-topisc div img{
   width: 45px;
   height: 45px;
+  border-radius: 5px;
 }
 .show-topisc>div>span{
   line-height: 24px;

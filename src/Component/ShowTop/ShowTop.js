@@ -32,6 +32,11 @@ class ShowTop extends Component {
       this.setState({
         content:''
       })
+      axios.get(`https://cnodejs.org/api/v1/topic/${id}`).then(res =>{
+        this.setState({
+          data : res.data.data
+        })
+      })
     })
     .catch(err => {
       alert(err)
